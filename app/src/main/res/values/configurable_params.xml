@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Configurable parameters -->
+
+<resources>
+
+
+    <integer name="free_version_code">1</integer>
+    <integer name="host_ads">1</integer>
+
+
+    <string name="app_name">BEEOK</string>
+    <string name="versionCode">5</string>
+    <string name="versionName">@string/app_version</string>
+    <string name="app_version"> ( v1.5 ) 2015-08-27</string>
+
+    <string name="open_recordings">Open Recordings</string>
+    <string name="ok_got_it">Ok Got It!!!</string>
+    <string name="save_file">Save</string>
+    <string name="skip_always">Dont Ask Again</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="confirm_msg">Yes Please!</string>
+    <string name="deny_msg">No Thanks!</string>
+    <string name="dialog_request_promotional_email_msg">Spread a word about BEEOK to all your friends.
+    Clicking YES, assumes your approval to send a Promotional Email to ALL email contacts in your list.</string>
+    <string name="dialog_exit_app_message">Confirm Application Exit by pressing YES.</string>
+    <string name="dialog_call_blocker_message">Call Blocker Feature : Feature available in Paid Version.</string>
+
+    <string name="version_history">
+        "\n" "Version History :"
+        "\n" "==============="
+        "\n" "v1.0_2015-08-14 : Initial BEEOK App upload to GooglePlayStore. Under development."
+        "\n" "v1.1_2015-08-15 : Enhanced UI for better UX (User Experience)."
+        "\n" "v1.2_2015-08-19 : Slider Menu added."
+        "\n" "v1.3_2015-08-20 : Time to earn some money. Added Google Ads."
+        "\n" "v1.4_2015-08-22 : Started working on Callblocker."
+        "\n" "v1.5_2015-08-27 : Complete revamp of UI. Now Rename Microphone recordings before saving."
+    </string>
+
+    <string name="call_recorder_explaination">
+
+            "\n\n""BEEOK app allows users to Automatically Record all Incoming or Outgoing Voice Calls without any user intervention."
+            "\n""After your Voice Call ends, you can find the recorded files stored with a pre-formatted filename."
+
+            "\n\nThe files are stored at the following location(s): "
+            "\n\nMicrophone Recordings : "
+            "\n/Documents/BEEOK/RECS_MIC/"
+
+            "\n\nVoice Recordings : "
+            "\n/Documents/BEEOK/RECS_VOICE_CALLS/"
+    </string>
+
+    <string name="app_about">
+             "\n\n"
+            "     BEEOK is aimed at users who wish to record phone conversations(both uplink &amp; downlink side) or for taking voice notes in a class."
+            "\n\n""     How is it different from Other call recorders available in the market? (You may ask). Well, BEEOK sits in your phone completely silent, and comes to life when you get an Incoming call or make an Outgoing call."
+            "\n\n""The recorded file after the call is over is saved to Documents folder for later retrieval."
+            "\n""** BEEOK comes handy when you wish to take Voice notes, (say in a class or seminar or an interview)."
+            "\n""** BEEOK enables you to Block unwanted calls from Stalkers, Call Centres"
+            "\n""** BEEOK works even after you restart your phone."
+
+            "\n\n""     We would love to hear from you, your feedback, suggestions &amp; bugs(if any) to make BEEOK even better."
+
+            "\n\n""e-mail: softwares.unleashed@gmail.com"
+            "\n""Web: www.softwaresunleashed.com"
+            "\n""Tweet Us: @SwUnleashedInc"
+
+            "\n\n""     If you appreciate the work done by the developer of Spy Rec app, please do take sometime out to rate this app on Google Store and Occasionally click on Ads. :)"
+
+    </string>
+
+
+    <string name="email_subject">New Android App -- BEEOK v1.5 (Automatic Call &amp; Mic Recorder) -- Newly Launched!!!</string>
+    <string name="email_body">
+        "Dear Friend,"
+        "\n\n" "Hope this mail finds you in great health!!"
+        "\n""Your friend just used BEEOK to record voice calls (Uplink and Downlink both), take self voice-notes, block unwanted calls. We are sure you would like to give it a try as well."
+        "\n\n""Allow us to introduce BEEOK Android App. You are amongst first lucky few to have a preview of this useful app."
+        "\n" "You can find it on Google Play too. You can install it from Google Play store. Search for 'BEEOK' on Google PlayStore "
+        "\n\n""Here is the direct link to App, BEEOK , on Google Play Store."
+        "\n\n""Link (Absolutely Free App) : https://play.google.com/store/apps/details?id=com.unleashed.android.beeokunleashed"
+        "\n""Hope to hear from you!!"
+        "\n""======================================"
+        "\n""Software Unleashed Inc."
+        "\n""www.softwaresunleashed.com"
+        "\n""softwares.unleashed@gmail.com"
+    </string>
+
+
+
+    <!-- Google Admob Banner Ad ID -->
+    <string name="banner_ad_unit_id">ca-app-pub-9975842691888931/6437390203</string>
+
+
+    <!-- Actual live banner for BEEOK...Use this in final production app
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>    - Test Ad ID
+    <string name="banner_ad_unit_id">ca-app-pub-9975842691888931/6437390203</string>    - Live Ad ID
+    -->
+
+    <!-- Appszoom Ad : App Key-->
+    <string name="az_appkey">76ea3d2aeb23ae6b641f9af812aabf45</string>
+    <integer name="timer_az_appkey">3</integer>
+
+    <!-- Adbuddiz Ad : App Key-->
+    <string name="adbuddiz_appkey">"e537af4a-babc-4c39-82fd-1567664e99e6"</string>
+    <integer name="timer_adbuddiz_appkey">5</integer>
+
+    <!-- App Next Ad : App Key-->
+    <string name="appnext_appkey">2a80554c-bbc5-4b5e-9264-b0aa5c82d03e</string>
+    <integer name="timer_appnext_appkey">7</integer>
+
+
+
+</resources>

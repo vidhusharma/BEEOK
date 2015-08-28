@@ -1,0 +1,33 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!--
+        Reference :
+            https://developer.android.com/training/basics/actionbar/adding-buttons.html
+            apps:showAsAction="ifRoom" - adds icons to action bar
+    -->
+    <item android:id="@+id/action_show_sliding_menu"
+        android:icon="@drawable/ic_drawer"
+        android:title="@string/action_show_sliding_menu"
+        app:showAsAction="ifRoom"  />
+
+<!-- Commented out as all options are moved to sliding Navigation Drawer
+
+    <item android:id="@+id/action_tell_a_friend_via_email" android:title="@string/action_tell_a_friend"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_send_promotional_email" android:title="@string/action_send_promotional_email"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_rate_app_on_google_play_store" android:title="@string/action_rate_app_on_google_play_store"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_exit" android:title="@string/action_exit_app"
+        android:orderInCategory="100" app:showAsAction="never" />
+-->
+
+</menu>
