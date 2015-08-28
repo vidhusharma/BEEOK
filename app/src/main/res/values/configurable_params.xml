@@ -10,7 +10,7 @@
 
 
     <string name="app_name">BEEOK</string>
-    <string name="versionCode">5</string>
+    <string name="versionCode">6</string>
     <string name="versionName">@string/app_version</string>
     <string name="app_version"> ( v1.6 ) 2015-08-28</string>
 
