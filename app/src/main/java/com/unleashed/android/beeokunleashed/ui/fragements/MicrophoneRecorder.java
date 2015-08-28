@@ -4,6 +4,8 @@ package com.unleashed.android.beeokunleashed.ui.fragements;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -22,6 +24,7 @@ import com.unleashed.android.beeokunleashed.R;
 import com.unleashed.android.beeokunleashed.adhosting.googleadmob.GoogleAdMob;
 import com.unleashed.android.beeokunleashed.constants.Constants;
 import com.unleashed.android.beeokunleashed.recorder.AudioRecorder;
+import com.unleashed.android.beeokunleashed.sensors.ShakeDetector;
 import com.unleashed.android.beeokunleashed.utils.FileHandling;
 import com.unleashed.android.beeokunleashed.utils.Utils;
 
@@ -41,10 +44,19 @@ public class MicrophoneRecorder extends Fragment {
     private Thread thrProgressBarUpdate;
     private ProgressBar pb;
 
+
+    // The following are used for the shake detection
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private ShakeDetector mShakeDetector;
+
+    // Flag to keep a check on recording .
+    private boolean button_pressed_state = false;
+
+
     public MicrophoneRecorder() {
 
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,15 +74,73 @@ public class MicrophoneRecorder extends Fragment {
             GoogleAdMob.init_google_ads(rootView, R.id.adView_microphone_recorder2);
         }
 
+        // ShakeDetector initialization
+        mSensorManager = (SensorManager) rootView.getContext().getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector();
+        mShakeDetector.setOnShakeListener(new ShakeDetector.OnShakeListener() {
+
+            @Override
+            public void onShake(int count) {
+				/*
+				 * The following method, "handleShakeEvent(count):" is a stub //
+				 * method you would use to setup whatever you want done once the
+				 * device has been shook.
+				 */
+                handleShakeEvent(count);
+            }
+        });
+
+
+
         init_microphone_recordings(rootView);
 
         return rootView;
 
     }
 
+    private void handleShakeEvent(int count) {
+//
+//        Context cntx = getActivity().getApplicationContext();
+//
+//        Toast.makeText(cntx, "Count..." + count, Toast.LENGTH_LONG).show();
+
+        if (button_pressed_state == false) {
+            // Recording was off, start recording now.
+            start_recording();
+        }
 
 
-    private boolean button_pressed_state = false;
+        if (button_pressed_state == true) {
+            // Recording was on-going, stop recording now
+            stop_recording();
+
+        }
+
+
+        // Toggle the state of button
+        button_pressed_state = !button_pressed_state;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // Add the following line to register the Session Manager Listener onResume
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        // Add the following line to unregister the Sensor Manager onPause
+        mSensorManager.unregisterListener(mShakeDetector);
+
+    }
+
+
 
     private void init_microphone_recordings(View converterView) {
 

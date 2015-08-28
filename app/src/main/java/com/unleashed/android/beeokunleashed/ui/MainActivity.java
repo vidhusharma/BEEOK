@@ -85,6 +85,8 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
 
+
+
         if(getResources().getInteger(R.integer.host_ads)==1) {
             // Call this utility function to trigger initiating Appszoom Interstetial Ads
             AppsZoomAd.init_appszoom_ads(this, MainActivity.this, false);
