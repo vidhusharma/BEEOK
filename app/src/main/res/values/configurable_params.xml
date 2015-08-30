@@ -4,9 +4,14 @@
 
 <resources>
 
-
+    <!-- App Feature Set - FeatureTags for Free & Paid Apps goes here. -->
     <integer name="free_version_code">1</integer>
     <integer name="host_ads">1</integer>
+
+    <!-- Payment Gateways to Enable -->
+    <integer name="PG_PAYPAL">0</integer>
+    <integer name="PG_GOOGLE">1</integer>
+
 
 
     <string name="app_name">BEEOK</string>
@@ -67,8 +72,8 @@
             "\n""Web: www.softwaresunleashed.com"
             "\n""Tweet Us: @SwUnleashedInc"
 
-            "\n\n""     If you appreciate the work done by the developer of Spy Rec app, please do take sometime out to rate this app on Google Store and Occasionally click on Ads. :)"
-
+            "\n\n""If you appreciate the work done by the developer of BEEOK app, please do take sometime out to rate this app on Google Store and Occasionally click on Ads. :)"
+            "\n\n" "Liked our product? Help us keep our engines running, Donate a Coffee  - https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PEMRBXBFEFXW6"
     </string>
 
 
@@ -86,6 +91,7 @@
         "\n""Software Unleashed Inc."
         "\n""www.softwaresunleashed.com"
         "\n""softwares.unleashed@gmail.com"
+        "\n\n" "Liked our product? Help us keep our engines running, Donate a Coffee - https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PEMRBXBFEFXW6"
     </string>
 
 
@@ -111,6 +117,11 @@
     <string name="appnext_appkey">2a80554c-bbc5-4b5e-9264-b0aa5c82d03e</string>
     <integer name="timer_appnext_appkey">7</integer>
 
+
+    <!-- Paypal App ID .. A new app needs to be added in Paypal developer page .. .APPS section
+    https://developer.paypal.com/developer/applications/ ...then click on CreateApp button -->
+    <string name="BEEOK_PAYPAL_SANDBOX_APP_ID">AQG6FlL_Xm2n6BkwgEJ05kS_9Q8IIfnQdR050greve3ZRszPWQPgPjwlqGvv8yk3CJtVjjORs0G5ESTf</string>
+    <string name="BEEOK_PAYPAL_LIVE_APP_ID">AXUQ9cLholM1C9qF7mnF8exJxJw6wFuIEXFIEK9pCSHcApq2y5VbkuDHOl_V3zrtWuYZAnFG10OI4Em4</string>
 
 
 </resources>

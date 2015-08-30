@@ -35,6 +35,7 @@ import com.unleashed.android.beeokunleashed.constants.Constants;
 import com.unleashed.android.beeokunleashed.ui.fragements.AboutApp;
 import com.unleashed.android.beeokunleashed.ui.fragements.CallBlocker;
 import com.unleashed.android.beeokunleashed.ui.fragements.CallRecorder;
+import com.unleashed.android.beeokunleashed.ui.fragements.Donate;
 import com.unleashed.android.beeokunleashed.ui.fragements.ExitApp;
 import com.unleashed.android.beeokunleashed.ui.fragements.HomePage;
 import com.unleashed.android.beeokunleashed.ui.fragements.MicrophoneRecorder;
@@ -137,8 +138,10 @@ public class MainActivity extends ActionBarActivity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1)));
         // About App
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(7, -1)));
-        // Exit App
+        // Donate
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons.getResourceId(8, -1)));
+        // Exit App
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons.getResourceId(9, -1)));
         //--> this is for adding a round text view , can be used for showing number of notifications pending   -- , true, "22"
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
 
@@ -243,6 +246,9 @@ public class MainActivity extends ActionBarActivity {
                 fragment = new AboutApp();
                 break;
             case 8:
+                fragment = new Donate();
+                break;
+            case 9:
                 fragment = new ExitApp();
                 break;
 

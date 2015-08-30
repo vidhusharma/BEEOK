@@ -1,9 +1,11 @@
 package com.unleashed.android.beeokunleashed.ui.fragements;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.media.MediaRecorder;
@@ -55,6 +57,19 @@ public class MicrophoneRecorder extends Fragment {
 
 
     public MicrophoneRecorder() {
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Code to lock the fragment to Portrait mode.
+        Activity a = getActivity();
+        if(a != null)
+            a.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        //setRetainInstance(true);
 
     }
 

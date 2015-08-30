@@ -103,6 +103,7 @@
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-analytics-7.8.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appindexing-7.8.0" level="project" />
+    <orderEntry type="library" exported="" name="PayPalAndroidSDK-2.9.11" level="project" />
     <orderEntry type="library" exported="" name="AdBuddiz-3.0.14" level="project" />
     <orderEntry type="library" exported="" name="VideoInterstitialSDK" level="project" />
     <orderEntry type="library" exported="" name="activation" level="project" />

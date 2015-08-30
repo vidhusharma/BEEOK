@@ -29,4 +29,5 @@ dependencies {
     compile files('libs/appszoomsdk.jar')
     compile files('libs/VideoInterstitialSDK.jar')
     compile files('libs/additionnal.jar')
+    compile files('libs/PayPalAndroidSDK-2.9.11.jar')
 }
