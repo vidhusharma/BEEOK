@@ -1,2 +1,2 @@
 # BEEOK
-BEEOK Automatic Call n MIC Recorder , Call Blocker
+BEEOK Automatic Call n Mic Recorder, Call Blocker
